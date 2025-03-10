@@ -45,7 +45,7 @@ body{
     text-align: left;
     width: 70%;
     padding-top: .8em;
-    color: hsl(248, 100%, 97%);
+    color: hsl(0, 0%, 93%);
     position: relative;
     left: 10em;
 }
@@ -68,6 +68,9 @@ body{
     border-radius: 7px;
     color: hsl(246, 25%, 77%);
     margin-bottom: 1.5em;
+    box-shadow: -1px 6px 9px 0px rgba(0,0,0,0.72);
+    -webkit-box-shadow: -1px 6px 9px 0px rgba(0,0,0,0.72);
+    -moz-box-shadow: -1px 6px 9px 0px rgba(0,0,0,0.72);
 }
 
 .form-header span{
@@ -83,7 +86,9 @@ form{
     box-sizing: border-box;
     max-width: 600px;
     width: 600px;
-
+    box-shadow: -1px 6px 9px 0px rgba(0,0,0,0.72);
+    -webkit-box-shadow: -1px 6px 9px 0px rgba(0,0,0,0.72);
+    -moz-box-shadow: -1px 6px 9px 0px rgba(0,0,0,0.72);
 }
 
 form input{
@@ -98,7 +103,12 @@ form input{
     color: hsl(249, 10%, 26%);
     font-weight: 600;
     font-size: 1rem; 
-    caret-color: hsl(248, 32%, 49%)
+    caret-color: hsl(248, 32%, 49%);
+    background: url('images/icon-error.svg') no-repeat right center;
+    background-size: 20px;
+    background-position: 30em center; /* Shift icon away from border */
+    padding-right: 40px; 
+    background: none;
     
 
 
@@ -123,7 +133,9 @@ form button{
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
-
+    box-shadow: -1px 6px 9px 0px rgba(0,0,0,0.72);
+    -webkit-box-shadow: -1px 6px 9px 0px rgba(0,0,0,0.72);
+    -moz-box-shadow: -1px 6px 9px 0px rgba(0,0,0,0.72);
 }
 
 .overlay{
