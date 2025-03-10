@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('images/bg-intro-desktop.png');
+    font-family: "Poppins", sans-serif;
+}
+
+#container{
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+        "cta-container  form-container"
+    ;
+    position: relative; 
+    z-index: 1;
+    top: 10em;
+    padding: 0 6em;
+    
+}
+
+.cta-container {
+    grid-area: cta-container;
+    color: #ffffff;
+    border: 1px solid black;
+
+}
+
+.cta-container h1{
+    font-size: 3rem;
+    text-align: center;
+    width: 60%;
+}
+
+.cta-container p{
+    text-align: center;
+    width: 50%;
+}
+
+.form-container {
+    border: 1px solid black;
+    grid-area: form-container;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header{
+    background-color: hsl(248, 32%, 49%);
+    margin: 0 auto;
+}
+
+form{
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 7px;
+
+}
+
+form input{
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 2.5em;
+    border-radius: 7px;
+    border: 1px solid hsl(246, 25%, 77%);
+    outline-color: hsl(248, 32%, 49%);
+}
+
+form input::placeholder{
+    color: hsl(249, 10%, 26%);
+    font-weight: 600;
+    font-size: 1rem; 
+    padding-left: 45px;
+}
+
+
+
+form button{
+    width: 100%;
+    height: 6vh;
+    background-color: hsl(154, 59%, 51%);
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.overlay{
+    background-color: hsl(0, 100%, 74%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.6;
+}
