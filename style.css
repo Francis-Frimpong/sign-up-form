@@ -14,6 +14,7 @@ body{
 
 #container{
     display: grid;
+    column-gap: 10px;
     place-items: center;
     grid-template-areas: 
         "cta-container  form-container"
@@ -94,7 +95,7 @@ form{
 form input{
     width: 100%;
     height: 8vh;
-    margin-bottom: 2.5em;
+    margin-bottom: 1.11em;
     border-radius: 7px;
     border: 1px solid hsl(246, 25%, 77%);
     outline-color: hsl(248, 32%, 49%);
@@ -108,7 +109,7 @@ form input{
     background-size: 20px;
     background-position: 30em center; /* Shift icon away from border */
     padding-right: 40px; 
-    background: none;
+    background: unset;
     
 
 
@@ -158,4 +159,10 @@ form .disclaimer{
 .disclaimer > .red{
     color: hsl(0, 100%, 74%);
     font-weight: 600;
+}
+
+h6{
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    display: none;
 }
