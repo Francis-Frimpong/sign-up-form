@@ -11,15 +11,17 @@ let isEmpty = false;
 const formValidation = (input, errorMsg, isEmpty, event) => {
     if (input.value.trim() === ""){
         isEmpty = true;
-        input.style.border = "1px solid #ff7a7a";
+        input.classList.add('validationStyles')
         errorMsg.forEach(message => {
             message.style.display = 'block';
         })
     }
 
-    if(isEmpty){
-        event.preventDefault()
-    }
+    return event.preventDefault()
+
+    // if(isEmpty){
+    //     event.preventDefault()
+    // }
 }
 
 

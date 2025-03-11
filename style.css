@@ -166,3 +166,8 @@ h6{
     color: hsl(0, 100%, 74%);
     display: none;
 }
+.validationStyles{
+    border: 1px solid #ff7a7a;
+    background: url('images/icon-error.svg') no-repeat right center;
+    background-position: 30em center; /* Shift icon away from border */ 
+}
