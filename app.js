@@ -6,7 +6,7 @@
 
 const inputs = document.querySelectorAll("input")
 const errorMsg = document.querySelectorAll('h6')
-const emailInput = document.querySelector('input[type="email"')
+const emailInput = document.querySelector('input[type="email"]')
 
 let isEmpty = false;
 console.log();
@@ -14,9 +14,11 @@ console.log();
 const formValidation = (input, errorMsg, isEmpty, event) => {
     if (input.value.trim() === ""){
         isEmpty = true;
-        input.classList.add('validationStyles')
-        input.removeAttribute("placeholder")
-        emailInput.setAttribute('placeholder', 'email@example/com')
+        input.classList.add('validationStyles');
+        input.removeAttribute("placeholder");
+        emailInput.setAttribute('placeholder', 'email@example/com');
+        emailInput.classList.add('inputErr');
+        
         errorMsg.forEach(message => {
             message.style.display = 'block';
         })

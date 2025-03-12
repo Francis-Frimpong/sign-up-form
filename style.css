@@ -171,3 +171,6 @@ h6{
     background: url('images/icon-error.svg') no-repeat right center;
     background-position: 30em center; /* Shift icon away from border */ 
 }
+.inputErr::placeholder{
+    color: #ff7a7a;
+}
