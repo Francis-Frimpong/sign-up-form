@@ -6,22 +6,25 @@
 
 const inputs = document.querySelectorAll("input")
 const errorMsg = document.querySelectorAll('h6')
+const emailInput = document.querySelector('input[type="email"')
+
 let isEmpty = false;
+console.log();
 
 const formValidation = (input, errorMsg, isEmpty, event) => {
     if (input.value.trim() === ""){
         isEmpty = true;
         input.classList.add('validationStyles')
+        input.removeAttribute("placeholder")
+        emailInput.setAttribute('placeholder', 'email@example/com')
         errorMsg.forEach(message => {
             message.style.display = 'block';
         })
     }
 
-    return event.preventDefault()
-
-    // if(isEmpty){
-    //     event.preventDefault()
-    // }
+    if(isEmpty){
+        event.preventDefault()
+    }
 }
 
 
